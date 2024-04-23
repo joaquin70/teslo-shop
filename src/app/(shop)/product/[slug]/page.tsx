@@ -1,7 +1,7 @@
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
-import { SizeSelector } from "@/components";
+import { QuantitySelector,SizeSelector } from "@/components";
 
 
 interface Props {
@@ -51,6 +51,9 @@ Hola
 
 
         {/* Selector De Cantidad */}
+        <QuantitySelector
+        quantity={2}
+        />
 
 
         {/*Button*/}
